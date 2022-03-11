@@ -5,6 +5,7 @@ class Main{
       Puerta miPuerta = new Puerta();
       Puerta miPuerta2 = new Puerta();
       Coche miCoche = new Coche();
+      Ventana ventanaDerCoche = new Ventana();
 /*
       miMotor.encender();
       miPuerta.getVentanaPuerta().abrir();
@@ -25,11 +26,23 @@ class Main{
       System.out.println(miPuerta2);
 */
 
+      System.out.println(miCoche.getMotor());
+      System.out.println(miCoche.getPuertaD());
+      miCoche.getPuertaD().abrir();
+      System.out.println(miCoche.getPuertaD());
+      System.out.println(miCoche.getPuertaD().getVentanaPuerta());
+      miCoche.getPuertaD().getVentanaPuerta().abrir();
+      System.out.println(miCoche.getPuertaD().getVentanaPuerta());
+
+      ventanaDerCoche = miCoche.getPuertaD().getVentanaPuerta();
+      ventanaDerCoche.abrir();
+      System.out.println(ventanaDerCoche);
+      ventanaDerCoche.cerrar();
+      System.out.println(ventanaDerCoche);
+
+
+      miCoche.abrirVentanaDer();
       System.out.println(miCoche);
-
-
-
-
 
     }
   }
