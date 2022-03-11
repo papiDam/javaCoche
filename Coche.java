@@ -10,6 +10,6 @@ class Coche{
     this.puertaI = new Puerta();
     }
     public String toString(){
-      return this.motorCoche + "\n" + this.puertaD + "\n" + this.puertaI
+      return this.motorCoche + "\n" + this.puertaD + "\n" + this.puertaI;
     }
 }
