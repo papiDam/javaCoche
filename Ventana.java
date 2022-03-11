@@ -15,9 +15,10 @@ class Ventana{
     }
     public String toString(){
         String resultado = "Ventana   :   cerrada";
-        if (this.encendido==true){
-            resultado = "Ventana  :   abierta"
+        if (this.estado){
+            resultado = "Ventana  :   abierta";
         }
         return resultado;
+      }
 
 }

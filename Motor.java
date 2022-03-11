@@ -14,9 +14,9 @@ class Motor {
         this.encendido = false;
     }
     public String toString(){
-        String reusltado = "Motor   :   apagado";
-        if (this.encendido==true){
-            resultado = "Motor  :   encendido"
+        String resultado = "Motor   :   apagado";
+        if (this.encendido){
+            resultado = "Motor  :   encendido";
         }
         return resultado;
     }

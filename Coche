@@ -1,0 +1,11 @@
+class Coche{
+  private Motor motorCoche;
+  private Puerta puertaI;
+  private Puerta puertaD;
+}
+
+public Coche(){
+  this.motorCoche = new Motor();
+  this.puertaD = new Puerta();
+  this.puertaI = new Puerta();
+}

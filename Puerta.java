@@ -20,8 +20,9 @@ class Puerta{
     }
     public String toString(){
         String resultado = "Puerta   :   cerrada";
-        if (this.encendido==true){
-            resultado = "Puerta  :   abierta"
+        if (this.estado){
+            resultado = "Puerta  :   abierta";
         }
-        return resultado + " | " + this.ventana;
+        return resultado + " | " + this.ventanaPuerta;
+      }
 }
