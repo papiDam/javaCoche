@@ -1,0 +1,6 @@
+//Creamos la clase persona
+//Dos tipos de herencia: extension(a los metodos del padre le añadimos metodos
+//propios) y especificacion(modificamos los metodos del
+//padre par adaptarlos a nuestra necesidad)
+//ademas de la  por agregacion a composicion(añadir clases como attibutos
+//de nuestra clase)explicado en coche
