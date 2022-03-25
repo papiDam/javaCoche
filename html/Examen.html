@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8"/>
+    <title>Examen</title>
+  </head>
+  <body>
+    <h3>Examen realizado por: Alberto Sanjuan Perez</h3>
+    <form method="get" action="procesamiento.php">
+      <p>
+        <label for="idNombre">
+          Nombre:
+        </label>
+        <input type="text" name="nombre" id="idNombre" placeholder="Nombre" ><br/>
+        <label for="idUsuario">
+          Nick Usuario:
+        </label>
+        <input type="text" name="NombreUsuario" id="idUsuario" placeholder="NombreUsuario"><br/>
+        <label for= "idEdad">
+          Edad:
+        </label>
+        <input type="number" name="Edad" id="idEdad" min="18" max="120" placeholder="Edad"/><br/>
+        <label for= "idTel">
+          Telefono:
+        </label>
+        <input type="tel" name="Telefono" id="idTel" placeholder="Telefono"/><br/>
+      </p>
+      <p>Carnet de conducir<br/>
+        <input type="checkbox" name="carnet[]" value="A" id="idA">
+        <label for= "idA">Carnet A</label><br/>
+        <input type="checkbox" name="carnet[]" value="B" id="idB">
+        <label for= "idB">Carnet B</label><br/>
+        <input type="checkbox" name="carnet[]" value="C" id="idC">
+        <label for= "idC">Carnet C</label><br/>
+      </p>
+      <p>Tipo de coche:<br/>
+        <input type="radio" name="tipo" value="Turismo" id="idTurismo">
+        <label for= "idTurismo">Turismo</label><br/>
+        <input type="radio" name="tipo" value="Deportivo" id="idDeportivo" checked>
+        <label for= "idDeportivo">Deportivo</label><br/>
+        <input type="radio" name="tipo" value="SUV" id="idSuv">
+        <label for= "idSuv">SUV</label><br/>
+        <input type="radio" name="tipo" value="Todoterreno" id="idTodoterreno">
+        <label for= "idTodoterreno">Todoterreno</label><br/>
+      </p>
+      <p>
+        <label for= "idMarca">Marca de coche:</label><br/>
+        <select name="MarcaDeCoche" id="idMarca">
+          <option value="Audi">Audi</option>
+          <option value="Volkswagen">Volkswagen</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Mercedes-Benz">Mercedes-Benz</option>
+          <option value="Ferrari" selected>Ferrari</option>
+          <option value="Seat">Seat</option>
+          <option value="BMW">BMW</option>
+          <option value="Porsche">Porsche</option>
+        </select>
+        <p>
+          <label for= "idModelo">Modelo de coche:</label><br/>
+          <input list="Modelo" name="ModeloCoche" id=idModelo/>
+          <datalist id="Modelo">
+            <option value="Mi coche"/>
+            <option value="Tu coche"/>
+          </datalist>
+        </p>
+        <p>
+          <input type="submit" value="Enviar"></input>
+        </p>
+      </form>
+    </body>
+  </html>

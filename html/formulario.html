@@ -15,9 +15,10 @@
     puede leer todo el mundo. No es apto para contraseñas.
     Action => Tenemos que indicar qué archivo lo recibe.
     -->
-    <form method="get" action="procesamiento.php" target= "_blank">
-      <!-- Datos usuario -->
+    <form method="get" action="procesamiento.php" target= "_blank" autocomplete novalidate>
+      <!-- target= "_self" lo abre en la misma pagina -->
       <p>
+        <fieldset><legend>Datos personales</legend>
         <label for="idUsuario">
           Usuario:
         </label>
@@ -30,6 +31,7 @@
           fecha nacimiento:
         </label>
         <input type="date" name="fechaNac" id="idFechaNac"/><br/>
+      </fieldset>
       </p>
       <p>Elige tu género:<br/>
         <input type="radio" name="genero" value="Hombre" id="idHombre" checked>
@@ -73,6 +75,30 @@
           <option value="Pizza"/>
         </datalist>
       </p>
+      <p>
+          <label for= "idTexto">Añadir comentario</label><br/>
+          <textarea name="texto" id="idTexto" rows="10" cols="10">
+          </textarea></br>
+          <!-- Lo normal es no poner ni filas ni columnas y ajustarlo con el css -->
+          <label for= "idOtroTexto">Añadir otro comentario</label><br/>
+          <textarea name="texto" id="idOtroTexto">
+          </textarea>
+      </p>
+      <!-- Lista con input -->
+      input boton: <inpt type = "button"><br/>
+      input checkbox: <inpt type = "checkbox"><br/>
+      input color: <inpt type = "color"><br/>
+      input fecha: <inpt type = "date"><br/>
+      input email: <inpt type = "email"><br/>
+      input archivo: <inpt type = "file"><br/>
+      input consulta: <inpt type = "image"><br/>
+      input mes: <inpt type = "month"><br/>
+      input numero: <inpt type = "number"><br/>
+      input reset: <inpt type = "reset"><br/>
+      input busca: <inpt type = "search"><br/>
+      input telefono: <inpt type = "tel"><br/>
+      input tiempo: <inpt type = "time"><br/>
+      input url: <inpt type = "url"><br/>
       <!-- Boton -->
       <p>
         <input type="submit" value="Click aqui"></input>
