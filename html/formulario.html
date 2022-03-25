@@ -1,29 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">  
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html">
+    <meta charset="utf-8"/>
     <title>Formulario</title>
-</head>
-<body>
-    <!--Method = post o get. Post para mandar 
-    la informacion del emnsaje.
-    codificado y cifrado por el protocolo HTTP.
-    Se envia al back lo recibe un archivo (php por ejemplo) 
-    tenemos que indicar que archivo lo recibe
-    Get para mandar la informacion en la cabecera
-    == en la URL == lo puede leer todo el mundo. no es
-    apto para contraseña.
-    Action=>tenemos que indicar que archivo lo recibe-->
-    <form method="get" action="procesamiento.php">
-        <!--Boton-->
-        <p>
-            <!--Para formularios type submit -->
-            <input type="submit" value="Clack aqui"> </input>
+  </head>
+  <body>
+    <!--
+    Method => post o get.
+    Post para mandar la informacion en el cuerpo del mensaje. Codificado y ci-
+    frado por el protocolo HTTP. Se envía al back, lo recibe un archivo (php por
+    ejemplo).
+    Get para mandar la información en la cabezar del mensaje == en la URL == lo
+    puede leer todo el mundo. No es apto para contraseñas.
+    Action => Tenemos que indicar qué archivo lo recibe.
+    -->
+    <form method="get" action="procesamiento.php" target= "_blank">
+      <!-- Datos usuario -->
+      <p>
+        <label for="idUsuario">
+          Usuario:
+        </label>
+        <input type="text" name="usuario" id="idUsuario" placeholder="Nombre" ><br/>
+        <label for="idContrasena">
+          Contraseña:
+        </label>
+        <input type="password" name="contrasena" id="idContrasena" placeholder="Contraseña"><br/>
+        <label for= "idFechaNac">
+          fecha nacimiento:
+        </label>
+        <input type="date" name="fechaNac" id="idFechaNac"/><br/>
+      </p>
+      <p>Elige tu género:<br/>
+        <input type="radio" name="genero" value="Hombre" id="idHombre" checked>
+        <label for= "idHombre">Hombre</label><br/>
+        <input type="radio" name="genero" value="Mujer" id="idMujer">
+        <label for= "idMujer">Mujer</label><br/>
+        <input type="radio" name="genero" value="noBinario" id="idNoBinario">
+        <label for= "idNoBinario">No Binario</label><br/>
+      </p>
+      <p>
+        comida favorita:<br/>
+        <input type="checkbox" name="comida[]" value="Pan" id="idPan">
+        <label for= "idPan">Pan</label><br/>
+        <input type="checkbox" name="comida[]" value="Lasana" id="idLasana">
+        <label for= "idLasaña">Lasaña</label><br/>
+        <input type="checkbox" name="comida[]" value="solomilloR" id="idSolomilloR">
+        <label for= "isSolomilloR">Solomillo salsa roquefort</label><br/>
+        <input type="checkbox" name="comida[]" value="Pizza" id="idPizza">
+        <label for= "idPizza">Pizza</label><br/>
+        <input type="checkbox" name="comida[]" value="CarneS" id="idCarneS">
+        <label for= "idCarneS">Carne en salsa</label><br/>
+        <input type="checkbox" name="comida[]" value="Crocretas" id="idCrocreta">
+        <label for= "idCrocretas">Crocretas</label><br/>
+        <input type="checkbox" name="comida[]" value="migasC" id="idMigasC" checked>
+        <label for= "idMigasC">Migas con chorizo y melon</label><br/>
+        <input type="checkbox" name="comida[]" value="MacarronesT" id="idMacarronesT">
+        <label for= "idMacarronesT">Macarrones con tomatico</label><br/>
+      </p>
+      <p>
+        <label for= "idComidaFavSelect">Comida favorita</label><br/>
+        <select name="ComidaFavSelect" id="idComidaFavselect">
+          <option value="Migas" selected>Migas</option>
+          <option value="Pizza">Pizza</option>
+        </select>
+      </p>
+      <p>
+        <label for= "idComidaFavLista">Comida favorita</label><br/>
+        <input list="ComidaFavLista" name="NameComidaFavLista" id=idComidaFavLista/>
+        <datalist id="ComidaFavLista">
+          <option value="Migas"/>
+          <option value="Pizza"/>
+        </datalist>
+      </p>
+      <!-- Boton -->
+      <p>
+        <input type="submit" value="Click aqui"></input>
 
-        </p>
 
+      </p>
     </form>
-    
-</body>
+  </body>
 </html>
-<!-- -->
+<!-- Comentario -->

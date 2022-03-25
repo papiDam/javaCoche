@@ -1,0 +1,50 @@
+OJO: Para cambiar usuario ir a credenciales.
+
+Git paso a paso:
+1. Entro en la carpeta que quiero que se convierta en un repositorio de git.
+    Usando comandos de terminal.
+2.1. Crear un repositorio. La carpeta se convierte en un repositorio.
+    - git init
+2.2. Clonar uno que ya exista.
+    - git clone "url"
+3. Para ver el estado de mi repositorio.
+    - git status
+    Me dice en que rama estoy y  si hay archivos modificados/preparados.
+    Si está en rojo: modificado en "Unstaged Changes" sin estar preparado para
+      ser subido mediante un comit.
+    Si está en verde: modificado en "Staged Changes" pero preparado para el
+      comit.
+3.1. Va a estar en rojo cuando hayamos editado un archivo y lo guardamos.
+3.2. Va a estar en verde cuando:
+    - git add "nombreArchivo"
+4. Para ver los commits realizados:
+    - git log.
+    - git log -p == Para ver al detalle las modificaciones.
+    - git log -3 == Para ver los 3 últimos.
+5. Para hacer commit + (add al mismo tiempo):
+    - git commit -m "solo un commit"
+    - git commit -a -m "con commit -a (add)"
+6. Para hacer el push:
+6.1. Si no tenemos enlazado el repositorio:
+    - git push "url"
+6.2. Si ya tenemos enlazado el gitHub con el repositorio:
+    - git push
+7. Para ver las modificaciones de un archivo:
+    - git diff
+8. con las ramas:
+8.1 Para mostrar las ramas:
+    - git branch
+8.2 para crear una rama:
+    - git branch "nombre"
+8.3 Para movernos entre ramas:
+    -git checkout "nombreRama"
+8.4 Para push una rama nueva:
+    - git push "url repositorio del que vamos a crear una rama"
+8.5 Eliminar rama:
+    - git branch -d/-d "rama"
+9. Para unir ramas:
+9.1 Si solo se ha hecho modificacion en la rama "hijo" podemos usar:
+    -git merge "rama destino"
+9.2 Si se han hecho modificaciones en las ramas "padre" e "hijo" copiamos
+    la info del "hijo" en el "padre" y despues eliminamos el "hijo".
+    - git fetch "url de la rama que queremos copiar en la actual"
