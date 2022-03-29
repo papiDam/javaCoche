@@ -1,5 +1,8 @@
 public class Alumno extends Persona{
-  private String grado;
+  private String grado;                 // Acceso de la propia clase
+          String gradoSinModificador;   // Acceso desde el paquete
+  public String gradoPublico;           // Acesso desde hijos y desde el paquete
+  protected String gradoProtegido;      // Acceso global
 
 
   public Alumno(){
@@ -10,6 +13,7 @@ public class Alumno extends Persona{
     //Super llama al constructor de la clase superior(de la que extendemos)
     super(nombre, dni);
     this.grado = grado;
+    //this.nombre = nombre;  //no se puede hacer por que nombre es privado del padre
   }
 
   public String toString(){

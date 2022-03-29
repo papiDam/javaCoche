@@ -21,6 +21,6 @@ class Main {
     System.out.println(listaAlumnos);
     System.out.println(listaAlumnos.get(0).getNombre());
 
-    System.out.println(miAlumno.getNombre());
+    
   }
 }
