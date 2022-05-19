@@ -6,8 +6,8 @@
 //de nuestra clase)explicado en coche
 
 public class Persona{
-  private String nombre;
-  private String dni;
+  protected String nombre;
+  protected String dni;
 
 //Constructor
   public Persona(){
@@ -26,10 +26,10 @@ public class Persona{
     return this.dni;
   }
   //Set
-  public void setNombre(){
+  public void setNombre(String nombre){
     this.nombre = nombre;
   }
-  public void setDni(){
+  public void setDni(String dni){
     this.dni = dni;
   }
   public String toString(){

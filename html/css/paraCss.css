@@ -1,0 +1,33 @@
+body{
+  font-family: monospace;
+/*background-color: rgba(0,200,255,0.5);*/
+opacity: 0.5;
+  background-image: url(https://c.tenor.com/ctOq0heJXN0AAAAC/teen-titans-teen-titans-go.gif);
+  /* #00c8f // hsl(192,100%,50%)*/
+  color: blue;
+  text-align: center;
+
+}
+h1{
+  background-color: dodgerblue;
+
+}
+p{
+  background-color: slateblue;
+  color: purple;
+  text-align: left;
+  border-radius: 15px;
+
+
+}
+.par{
+  font-style: italic;
+  font-weight: bolder;
+
+
+}
+p.par{
+    color: yellow;
+    border: 5px dotted violet;
+    text-align: right;
+}

@@ -34,7 +34,7 @@ public class Tablero{
       for (int j = 0; j < this.columnas; j++){
         if(posicion % 2 == 0 ){
           this.tablero[i][j] = "X";
-        }else if(posicion % 2 == 1){
+        }else (posicion % 2 == 1){
           this.tablero[i][j] = "O";
         }
         posicion++;
